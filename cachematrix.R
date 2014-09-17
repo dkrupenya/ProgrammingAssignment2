@@ -26,7 +26,6 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## If x doesn't contain inverse matrix - calculate and returen inverse matrix
 ## else return inverse matrix from cache
-
 cacheSolve <- function(x) {
   
   ## check cache
@@ -45,14 +44,8 @@ cacheSolve <- function(x) {
 
 }
 
-cachedInverse <- function(x = matrix()) {
-  cacheX <- makeCacheMatrix(x)
-  cacheSolve(cacheX)
-}
-
 
 ## This function will test functionality/ Run it from command line
-
 testCacheSolve <- function() {
   
   # generate random matrix
